@@ -26,6 +26,10 @@ from typing import Optional, List, Dict, Any, Mapping
 
 import numpy as np
 import torch
+
+def is_torch_tpu_available():
+    return False
+
 from datasets import load_dataset
 from loguru import logger
 from peft import LoraConfig, TaskType, get_peft_model, PeftModel, prepare_model_for_kbit_training
