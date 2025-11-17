@@ -27,6 +27,9 @@ from types import MethodType
 from typing import Literal, Optional, Tuple
 
 import torch
+def is_torch_tpu_available():
+    return False
+
 import torch.utils.data
 from datasets import load_dataset
 from loguru import logger
