@@ -41,7 +41,7 @@ from transformers import (
     HfArgumentParser,
     Trainer,
     Seq2SeqTrainingArguments,
-    is_torch_tpu_available,
+    # is_torch_tpu_available,
     set_seed,
     BitsAndBytesConfig,
 )
