@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node 2 supervised_finetuning.py \
+CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node 1 supervised_finetuning.py \
     --model_name_or_path Qwen/Qwen2.5-0.5B-Instruct \
     --train_file_dir ./data/finetune \
     --validation_file_dir ./data/finetune \
